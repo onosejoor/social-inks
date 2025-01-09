@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gray900: "hsl(0, 0%, 8%)",
+              gray800: "hsl(0, 0%, 12%)",
+              gray700: "hsl(0, 0%, 20%)",
+              green: "hsl(75, 94%, 57%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray900 grid place-contents-center h-screen">
+    <div
+      class="bg-gray800 p-10 my-10 flex flex-col items-center w-[400px] gap-5 mx-auto rounded-lg"
+    >
+      <div class="h-[100px] w-[100px] rounded-full overflow-hidden grid gap-5">
+        <img src="/assets/images/avatar-jessica.jpeg" alt="" />
+      </div>
+      <div class="grid gap-[5px] text-center">
+        <h1 class="text-white font-bold text-lg">Onos Ejoor</h1>
+        <p class="font-bold text-green">Delta State, Nigeria</p>
+      </div>
+      <p class="text-white capitalise">"Full Stack web developer"</p>
+      <div class="grid gap-5 w-full">
+        <a href="https://github.com/onosejoor" class="w-full">
+          <button
+            class="w-full py-[10px] text-white hover:text-gray900 font-bold hover:bg-green bg-gray700 transition-colors rounded-md"
+          >
+            Github
+          </button>
+        </a>
+        <a href="https://www.frontendmentor.io/profile/onosejoor" class="w-full">
+          <button
+            class="w-full py-[10px] text-white hover:text-gray900 font-bold hover:bg-green bg-gray700 transition-colors rounded-md"
+          >
+            Frontend Mentor
+          </button>
+        </a>
+        <a href="https://threads.net/@dev.text16" class="w-full">
+          <button
+            class="w-full py-[10px] text-white hover:text-gray900 font-bold hover:bg-green bg-gray700 transition-colors rounded-md"
+          >
+          Threads
+          </button>
+        </a>
+        <a href="https://x.com/DevText16" class="w-full">
+          <button
+            class="w-full py-[10px] text-white hover:text-gray900 font-bold hover:bg-green bg-gray700 transition-colors rounded-md"
+          >
+            Twitter
+          </button>
+        </a>
+        <a href="https://www.instagram.com/dev.text16/" class="w-full">
+          <button
+            class="w-full py-[10px] text-white hover:text-gray900 font-bold hover:bg-green bg-gray700 transition-colors rounded-md"
+          >
+            Instagram
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="text-white mx-auto">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Onos</a>.
+    </div>
+  </body>
+</html>
